@@ -13,7 +13,7 @@ STRIPE_SECRET_KEY = env(
     default="sk_test_51MP5RBCoqsP9nmU7FsfEojghlNyai8Yfgw5W4hlTpvUa7gw2jB8bOeqwhGxSTqI2jDyUOy4AfrVfpl5VLs2bcDyG00fFbh3Y9y",
 )
 
-ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1", "64.227.6.248"]
 
 # CACHES
 CACHES = {
