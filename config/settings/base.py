@@ -51,6 +51,7 @@ DJANGO_APPS = [
 ]
 THIRD_PARTY_APPS = [
     "rest_framework",
+    "corsheaders",
 ]
 
 LOCAL_APPS = [
@@ -94,11 +95,14 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 
-    #"corsheaders.middleware.CorsMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     #"django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.BrokenLinkEmailsMiddleware",
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
 
 # STATIC
 STATIC_ROOT = str(ROOT_DIR / "staticfiles")
