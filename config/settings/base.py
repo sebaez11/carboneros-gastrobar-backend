@@ -103,7 +103,7 @@ MIDDLEWARE = [
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
-    "http://181.51.34.44",
+    "http://181.51.34.44:3000",
 ]
 
 # STATIC
